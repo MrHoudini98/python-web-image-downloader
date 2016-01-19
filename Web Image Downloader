@@ -1,0 +1,13 @@
+import urllib.request
+import random
+
+#Create By :MrHoudini
+#Email: Mr.Houdini77@Gmail.com
+
+url=input("Your Image Address :\n")
+def download_web_image(url):
+    name=random.randrange(1,200)
+    fullname=str(name)+".jpg"
+    urllib.request.urlretrieve(url,fullname)
+
+download_web_image(url)
